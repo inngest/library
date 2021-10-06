@@ -1,7 +1,9 @@
 ---
 {
-	title: "Post-signup workflow",
-	tags: ["signup", "marketing", "sales", "operations"]
+	"title": "Post-signup workflow",
+	"subtitle": "Handles all post-signup logic, including fan-out & emails",
+	"tags": ["signup", "marketing", "sales", "operations"],
+	"source": "./workflow.cue"
 }
 ---
 
