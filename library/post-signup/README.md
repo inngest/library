@@ -10,7 +10,7 @@
 # Post-signup workflow example
 
 This workflow runs after every `signup.new` event.  Each time a user signs up,
-the workflow sends the user a welcome email and adds the user to Close.IO for
+the workflow sends the user a welcome email, adds the user to Close.IO for
 sales followup, and adds the user to a marketing list - if the event data
 says they've subscribed to a newsletter.
 
