@@ -11,7 +11,7 @@ workflow: workflows.#Workflow & {
 	}]
 	actions: [{
 		clientID: 1
-		name:     "Wait for a workflow to be created"
+		name:     "Wait 1 day for a workflow to be created"
 		dsn:      "com.inngest/wait-for-event"
 		metadata: {
 			// We're waiting up to 1 day for a workflow created event from the
