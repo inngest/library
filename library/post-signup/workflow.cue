@@ -59,7 +59,7 @@ workflow: workflows.#Workflow & {
 			incoming: 2
 			metadata: {
 				type: "edge"
-				name: "Newsletter is true"
+				name: "User subscribed to the newsletter"
 				if:   "event.data.newsletter == true"
 			}
 		},
