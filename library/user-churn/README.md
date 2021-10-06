@@ -1,13 +1,13 @@
 ---
 {
-	"title": "Basic churn & re-engagement flow",
+	"title": "Basic churn and retention flow",
 	"subtitle": "Sends new signups an email if the user doesn't do something",
 	"tags": ["signup", "marketing"],
 	"source": "./workflow.cue"
 }
 ---
 
-# Basic churn & re-engagement flow
+# Basic churn & retention flow
 
 This workflow runs after every `signup.new` event.  It **waits up to 1 day
 for another event**, and if the event **isn't** received it sends the user
