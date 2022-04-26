@@ -1,0 +1,17 @@
+name: Compile library items
+on: [push]
+jobs:
+  compile-library:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-go@v3
+        with:
+          go-version: '>=1.18.0'
+      - name: Merge library configuration
+        run: go run ./compile.go
+      - name: Release library configuration
+        uses: softprops/action-gh-release@v1
+        if: github.ref == 'refs/heads/main'
+        with:
+          files: dist/library.json
