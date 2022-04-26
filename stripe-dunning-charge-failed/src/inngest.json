@@ -1,0 +1,14 @@
+{
+  "name": "stripe dunning charge failed",
+  "id": "frank-mink-41a9aa",
+  "triggers": [
+    {
+      "event": "stripe/charge.failed",
+      "definition": {
+        "format": "cue",
+        "synced": true,
+        "def": "file://./events/stripe-charge-failed.cue"
+      }
+    }
+  ]
+}
