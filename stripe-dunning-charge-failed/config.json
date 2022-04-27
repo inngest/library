@@ -1,6 +1,8 @@
 {
 	"name":        "Stripe dunning flow: handling missed subscription payments",
-	"description": "Whenever a subscription payment fails, run two functions:\n 1. Notify the account manager & billing team via Slack\n 2. Update the user’s account to read only",
+	"description": "",
+	"when": "Whenever a subscription payment fails",
+	"run": "1. Notify the account manager & billing team via Slack\n 2. Update the user’s account to read only",
 	"why": "Idempotency is critical:  you don’t want to handle billing events twice.  Building itempotency takes time, but you get it for free with Inngest.\nIt’s also important to keep this flow well audited in case of issues or customer support requests, which is built in to the Inngest UI.",
 	"categories": ["webhooks", "integrations"],
 	"features": ["idempotency", "audit trails"],
